@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About us",
+    "team": "Team",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Labor Lawyers in Barcelona",
+    "subtitle": "Castori Laboral",
+    "description": "At Castori Laboral, we have extensive experience in defending workers' rights and are experts in dismissals, workplace harassment, and compensation.",
+    "cta": "Contact for initial consultation"
+  },
+  "about": {
+    "title": "About us",
+    "mission": "Our mission",
+    "missionText": "Our goal is to facilitate workers in defending their rights and interests, providing them with our legal knowledge and extensive experience, both in court and in individual and collective negotiations.",
+    "vision": "Our vision",
+    "visionText": "We understand law practice as a way to have a social impact while defending workers' interests.",
+    "help": "How can we help you?",
+    "helpText": "If you need a labor lawyer to resolve issues and defend your rights as a worker, you can consult with us and we will assist you as soon as possible."
+  },
+  "team": {
+    "title": "Our team",
+    "subtitle": "Expert professionals in labor law",
+    "lawyer": {
+      "name": "Eloi Orihuela Castro",
+      "position": "Lawyer and Economist",
+      "education": [
+        "Graduate in Law and Economics from Pompeu Fabra University",
+        "Master's in Legal Practice from Pompeu Fabra University, specializing in Labor Law"
+      ],
+      "experience": [
+        "Has extensive experience in defending Workers' Rights",
+        "Responsible for all types of claims against companies",
+        "Expert in objective dismissals for economic, technical, organizational, or production reasons",
+        "Has participated in collective negotiations advising workers' representatives"
+      ],
+      "languages": "Languages: English and Italian"
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Free initial consultation",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "info": {
+      "title": "Contact information",
+      "phone": "Phone",
+      "email": "Email",
+      "schedule": "Schedule",
+      "scheduleText": "Monday to Friday: 9:00 AM - 7:00 PM"
+    }
+  },
+  "footer": {
+    "description": "Labor lawyers in Barcelona",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "home": "Inici",
+    "about": "Sobre nosaltres",
+    "team": "Equip",
+    "blog": "Blog",
+    "contact": "Contacte"
+  },
+  "home": {
+    "title": "Advocats Laboralistes a Barcelona",
+    "subtitle": "Castori Laboral",
+    "description": "A Castori Laboral, tenim una àmplia experiència en la defensa dels drets dels treballadors i som experts en acomiadaments, assetjament laboral i indemnitzacions.",
+    "cta": "Contacta per primera consulta"
+  },
+  "about": {
+    "title": "Sobre nosaltres",
+    "mission": "La nostra missió",
+    "missionText": "El nostre objectiu és facilitar als treballadors la defensa dels seus drets i interessos, posant a la seva disposició els nostres coneixements jurídics i àmplia experiència, tant davant dels tribunals com en negociacions individuals i col·lectives.",
+    "vision": "La nostra visió",
+    "visionText": "Entenem l'advocacia com una forma de tenir un impacte social, alhora que es defensen els interessos dels treballadors.",
+    "help": "Com podem ajudar-te?",
+    "helpText": "Si necessites un advocat laboralista per resoldre problemàtiques i defensar els teus drets com a treballador pots consultar amb nosaltres i t'atendrem el més aviat possible."
+  },
+  "team": {
+    "title": "El nostre equip",
+    "subtitle": "Professionals experts en dret laboral",
+    "lawyer": {
+      "name": "Eloi Orihuela Castro",
+      "position": "Advocat i Economista",
+      "education": [
+        "Graduat en Dret i Economia per la Universitat Pompeu Fabra",
+        "Màster d'Accés a l'Advocacia de la Universitat Pompeu Fabra, especialitat en Dret Laboral"
+      ],
+      "experience": [
+        "Té una àmplia experiència en la defensa dels Drets dels Treballadors",
+        "Responsable de reclamacions de tot tipus davant empreses",
+        "Expert en acomiadaments objectius per causes econòmiques, tècniques, organitzatives o de producció",
+        "Ha participat en negociacions col·lectives assessorant als representants dels treballadors"
+      ],
+      "languages": "Idiomes: Anglès i Italià"
+    }
+  },
+  "contact": {
+    "title": "Contacta amb nosaltres",
+    "subtitle": "Primera consulta gratuïta",
+    "form": {
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "message": "Missatge",
+      "submit": "Enviar"
+    },
+    "info": {
+      "title": "Informació de contacte",
+      "phone": "Telèfon",
+      "email": "Correu electrònic",
+      "schedule": "Horari",
+      "scheduleText": "Dilluns a Divendres: 9:00 - 19:00"
+    }
+  },
+  "footer": {
+    "description": "Advocats laboralistes a Barcelona",
+    "contact": "Contacte",
+    "followUs": "Segueix-nos",
+    "rights": "Tots els drets reservats"
+  }
+}
