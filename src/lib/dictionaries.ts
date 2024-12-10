@@ -1,4 +1,3 @@
-import 'server-only'
 import type { Dictionary } from '@/types/dictionary'
 
 // Import dictionaries statically to ensure they are available
