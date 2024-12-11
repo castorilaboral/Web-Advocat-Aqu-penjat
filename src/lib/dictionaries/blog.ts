@@ -40,7 +40,8 @@ export const blogDictionary = {
           - Reclamar davant el jutjat laboral dins dels 20 dies hàbils des de la notificació de l'acomiadament.
 
           A Castori Laboral, som especialistes en casos d'acomiadament col·lectiu encobert. El nostre equip d'advocats s'assegura de protegir els teus drets i t'acompanya en cada etapa del procés.
-        `
+        `,
+        date: '2024-03-15',
       },
       {
         id: 5,
@@ -94,7 +95,8 @@ export const blogDictionary = {
           - Importància estratègica de les funcions del treballador.
 
           A Castori Laboral, som especialistes en dret laboral i tenim una llarga trajectòria en assessorament de treballadors per a la sol·licitud de l'adaptació de jornada. Oferim assessorament tant en cas de necessitar acompanyament en la negociació com si és necessari demandar a l'empresa.
-        `
+        `,
+        date: '2024-06-22',
       },
       {
         id: 6,
@@ -141,7 +143,8 @@ export const blogDictionary = {
           - Documentar adequadament totes les fases del procés.
 
           A Castori Laboral, som experts en l'assessorament sobre stock options i la seva inclusió en indemnitzacions laborals. El nostre equip d'advocats t'ajudarà a entendre els teus drets i a protegir els teus interessos en cas de conflicte laboral.
-        `
+        `,
+        date: '2024-09-10',
       },
       {
         id: 7,
@@ -171,7 +174,8 @@ export const blogDictionary = {
           A Castori Laboral, comptem amb una àmplia experiència en el maneig de casos d'assetjament laboral i situacions relacionades, com el bossing (assetjament exercit per superiors) i altres formes de discriminació. El nostre equip d'advocats ha ajudat a moltes persones a defensar-se d'aquest tipus d'abusos, aconseguint obtenir compensacions importants per a elles.
 
           Estem preparats per oferir-te un servei complet i adaptat a les teves necessitats, ja sigui que estiguis enfrontant una situació de mobbing, un acomiadament injust o qualsevol altre tipus de conflicte laboral.
-        `
+        `,
+        date: '2024-11-30',
       },
       {
         id: 8,
@@ -247,7 +251,8 @@ export const blogDictionary = {
           - Reclamar ante el juzgado laboral dentro de los 20 días hábiles desde la notificación del despido.
 
           En Castori Laboral, somos especialistas en casos de despido colectivo encubierto. Nuestro equipo de abogados se asegura de proteger tus derechos y acompañarte en cada etapa del proceso.
-        `
+        `,
+        date: '2024-03-15',
       },
       {
         id: 5,
@@ -301,7 +306,8 @@ export const blogDictionary = {
           - Importancia estratégica de las funciones del trabajador.
 
           En Castori Laboral, somos especialistas en derecho laboral y tenemos una larga trayectoria en asesoramiento de trabajadores para la solicitud de la adaptación de jornada. Ofrecemos asesoramiento tanto en caso de necesitar acompañamiento en la negociación como si es necesario demandar a la empresa.
-        `
+        `,
+        date: '2024-06-22',
       },
       {
         id: 6,
@@ -348,7 +354,8 @@ export const blogDictionary = {
           - Documentar adecuadamente todas las fases del proceso.
 
           En Castori Laboral, somos expertos en el asesoramiento sobre stock options y su inclusión en indemnizaciones laborales. Nuestro equipo de abogados te ayudará a entender tus derechos y a proteger tus intereses en caso de conflicto laboral.
-        `
+        `,
+        date: '2024-09-10',
       },
       {
         id: 7,
@@ -378,7 +385,8 @@ export const blogDictionary = {
           En Castori Laboral, contamos con una amplia experiencia en el manejo de casos de acoso laboral y situaciones relacionadas, como el bossing (acoso ejercido por superiores) y otras formas de discriminación. Nuestro equipo de abogados ha ayudado a muchas personas a defenderse de este tipo de abusos, logrando obtener compensaciones importantes para ellas.
 
           Estamos preparados para ofrecerte un servicio completo y adaptado a tus necesidades, ya sea que estés enfrentando una situación de mobbing, un despido injusto o cualquier otro tipo de conflicto laboral.
-        `
+        `,
+        date: '2024-11-30',
       },
       {
         id: 8,
@@ -454,7 +462,8 @@ export const blogDictionary = {
           - File a claim with the labor court within 20 working days from the dismissal notification.
 
           At Castori Laboral, we are specialists in hidden collective dismissal cases. Our team of lawyers ensures the protection of your rights and accompanies you through every stage of the process.
-        `
+        `,
+        date: '2024-03-15',
       },
       {
         id: 5,
@@ -508,7 +517,8 @@ export const blogDictionary = {
           - Strategic importance of the worker's functions.
 
           At Castori Laboral, we are specialists in labor law with extensive experience in advising workers on workday adaptation requests. We offer guidance both for negotiation support and when it's necessary to file a claim against the company.
-        `
+        `,
+        date: '2024-06-22',
       },
       {
         id: 6,
@@ -555,7 +565,8 @@ export const blogDictionary = {
           - Properly document all phases of the process.
 
           At Castori Laboral, we are experts in advising on stock options and their inclusion in employment compensations. Our team of lawyers will help you understand your rights and protect your interests in case of employment disputes.
-        `
+        `,
+        date: '2024-09-10',
       },
       {
         id: 7,
@@ -585,7 +596,8 @@ export const blogDictionary = {
           At Castori Laboral, we have extensive experience in handling cases of workplace harassment and related situations, such as bossing (harassment by superiors) and other forms of discrimination. Our team of lawyers has helped many people defend themselves against these types of abuse, successfully obtaining significant compensation for them.
 
           We are prepared to offer you a complete service adapted to your needs, whether you're facing a mobbing situation, unfair dismissal, or any other type of labor conflict.
-        `
+        `,
+        date: '2024-11-30',
       },
       {
         id: 8,

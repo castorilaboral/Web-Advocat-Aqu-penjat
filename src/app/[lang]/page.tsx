@@ -16,9 +16,9 @@ export default async function Home({
         <Image
           src="/images/skyline-barcelona-80-cm.jpg"
           alt="Barcelona Skyline"
-          fill
+          layout="fill"
+          objectFit="cover"
           priority
-          className="object-cover w-full"
         />
       </div>
       <div className="max-w-7xl mx-auto">
@@ -46,13 +46,12 @@ export default async function Home({
               <div className="mt-8 sm:mt-12">
                 <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
                   <Image
-                    src={encodeURI('/images/capcelera barcelona.webp')}
+                    src="/images/capcelera barcelona.webp"
                     alt="Castori Laboral Barcelona Office"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
                     priority
-                    className="rounded-lg"
                   />
                 </div>
               </div>
