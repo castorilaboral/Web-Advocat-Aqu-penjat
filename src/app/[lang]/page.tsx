@@ -36,8 +36,8 @@ export default async function Home({
               <div className="mt-8 sm:mt-12">
                 <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/your-image.jpg"  {/* Replace 'your-image.jpg' with your actual image filename */}
-                    alt="Castori Laboral"
+                    src="/images/capcelera barcelona.webp"
+                    alt="Castori Laboral Barcelona Office"
                     fill
                     style={{ objectFit: 'cover' }}
                     priority
