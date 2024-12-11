@@ -34,12 +34,13 @@ export default async function Home({
               </div>
               {/* Image section */}
               <div className="mt-8 sm:mt-12">
-                <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden">
+                <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
                   <Image
-                    src="/images/capcelera barcelona.webp"
+                    src={encodeURI('/images/capcelera barcelona.webp')}
                     alt="Castori Laboral Barcelona Office"
                     fill
-                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
                     priority
                     className="rounded-lg"
                   />
