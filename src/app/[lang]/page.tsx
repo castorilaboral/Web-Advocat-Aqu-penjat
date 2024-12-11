@@ -1,5 +1,6 @@
 import { getDictionary } from '@/lib/dictionaries'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default async function Home({
   params: { lang },
@@ -29,6 +30,19 @@ export default async function Home({
                   >
                     {dict.home.cta}
                   </Link>
+                </div>
+              </div>
+              {/* Image section */}
+              <div className="mt-8 sm:mt-12">
+                <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/your-image.jpg"  {/* Replace 'your-image.jpg' with your actual image filename */}
+                    alt="Castori Laboral"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                    className="rounded-lg"
+                  />
                 </div>
               </div>
             </div>
