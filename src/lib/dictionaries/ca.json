@@ -48,7 +48,10 @@
       "email": "Correu electrònic",
       "phone": "Telèfon",
       "message": "Missatge",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "submitting": "Enviant...",
+      "successMessage": "Missatge enviat correctament! Ens posarem en contacte aviat.",
+      "errorMessage": "Error en enviar el missatge. Si us plau, torneu-ho a provar o contacteu-nos directament."
     },
     "info": {
       "title": "Informació de contacte",

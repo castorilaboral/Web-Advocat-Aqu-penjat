@@ -9,6 +9,9 @@ interface ContactFormProps {
     phone: string
     message: string
     submit: string
+    submitting: string
+    successMessage: string
+    errorMessage: string
   }
 }
 
@@ -20,10 +23,45 @@ export default function ContactForm({ dict }: ContactFormProps) {
     message: '',
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string | null;
+  }>({ type: null, message: null })
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Aquí implementarem l'enviament del formulari
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus({ type: null, message: null })
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message')
+      }
+
+      setSubmitStatus({
+        type: 'success',
+        message: dict.successMessage || 'Message sent successfully!',
+      })
+      setFormData({ name: '', email: '', phone: '', message: '' })
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: dict.errorMessage || 'Failed to send message. Please try again.',
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (
@@ -117,11 +155,28 @@ export default function ContactForm({ dict }: ContactFormProps) {
       <div>
         <button
           type="submit"
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          disabled={isSubmitting}
+          className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white ${
+            isSubmitting
+              ? 'bg-indigo-400 cursor-not-allowed'
+              : 'bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+          }`}
         >
-          {dict.submit}
+          {isSubmitting ? dict.submitting || 'Sending...' : dict.submit}
         </button>
       </div>
+
+      {submitStatus.type && (
+        <div
+          className={`mt-4 p-4 rounded-md ${
+            submitStatus.type === 'success'
+              ? 'bg-green-50 text-green-800'
+              : 'bg-red-50 text-red-800'
+          }`}
+        >
+          {submitStatus.message}
+        </div>
+      )}
     </form>
   )
 }

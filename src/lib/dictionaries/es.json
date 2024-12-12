@@ -48,7 +48,10 @@
       "email": "Correo electrónico",
       "phone": "Teléfono",
       "message": "Mensaje",
-      "submit": "Enviar"
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "successMessage": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+      "errorMessage": "Error al enviar el mensaje. Por favor, inténtelo de nuevo o contáctenos directamente."
     },
     "info": {
       "title": "Información de contacto",
