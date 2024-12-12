@@ -7,6 +7,35 @@ const getBlogPost = (lang: string, slug: string) => {
   return dictionary.posts.find(post => post.slug === slug);
 };
 
+const formatContent = (content: string) => {
+  // Separar el contenido en secciones
+  const sections = content.split('\n\n').map(section => {
+    if (section.trim().startsWith('-')) {
+      // Es una lista
+      const items = section.split('\n').filter(item => item.trim());
+      return (
+        <ul className="list-none space-y-3 my-8 ml-4">
+          {items.map((item, idx) => (
+            <li key={idx} className="flex items-start">
+              <span className="inline-block w-2 h-2 rounded-full bg-primary-500 mt-2 mr-3 flex-shrink-0"></span>
+              <span className="text-secondary-700">{item.replace('-', '').trim()}</span>
+            </li>
+          ))}
+        </ul>
+      );
+    } else {
+      // Es un párrafo normal
+      return (
+        <p className="text-justify leading-relaxed mb-6">
+          {section}
+        </p>
+      );
+    }
+  });
+
+  return sections;
+};
+
 export default function BlogPost({
   params: { lang, slug },
 }: {
@@ -64,16 +93,14 @@ export default function BlogPost({
             <h1 className="text-4xl sm:text-5xl font-bold text-secondary-900 leading-tight mb-6">
               {post.title}
             </h1>
-            <p className="text-xl text-secondary-600 leading-relaxed">
+            <p className="text-xl text-secondary-600 leading-relaxed text-justify">
               {post.excerpt}
             </p>
           </header>
           
           <div className="prose prose-lg prose-primary max-w-none">
-            <div className="text-secondary-700 whitespace-pre-line space-y-6">
-              {post.content.split('\\n\\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+            <div className="text-secondary-700 space-y-2">
+              {formatContent(post.content)}
             </div>
           </div>
         </article>
