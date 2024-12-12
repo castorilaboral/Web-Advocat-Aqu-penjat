@@ -62,13 +62,14 @@ export default async function Team({
               </div>
             </div>
           </div>
-          <div className="relative h-[600px] rounded-lg overflow-hidden">
+          <div className="relative w-full h-[400px]">
             <Image
               src="/images/imatge_sobre_nosaltres.jpg"
               alt="Our Team"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              width={800}
+              height={600}
+              priority
+              className="rounded-lg object-cover w-full h-full"
             />
           </div>
         </div>
