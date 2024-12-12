@@ -40,11 +40,11 @@ export default async function About({
             </div>
 
             {/* Help Section */}
-            <div className="bg-indigo-50 rounded-lg px-6 py-8">
-              <h2 className="text-3xl font-extrabold text-indigo-900">
+            <div className="bg-gray-100 rounded-lg px-6 py-8">
+              <h2 className="text-3xl font-extrabold text-gray-900">
                 {dict.about.help}
               </h2>
-              <p className="mt-4 text-lg text-indigo-900">
+              <p className="mt-4 text-lg text-gray-700">
                 {dict.about.helpText}
               </p>
             </div>
