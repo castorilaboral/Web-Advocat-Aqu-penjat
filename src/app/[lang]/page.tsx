@@ -10,25 +10,6 @@ export default async function Home({
 
   return (
     <div className="relative bg-white">
-      {/* Skyline Image Section */}
-      <div className="w-full">
-        <img
-          src="../../../public/images/skyline-barcelona-80-cm.jpg"
-          alt="Barcelona Skyline"
-          className="w-full h-[400px] object-cover"
-        />
-        {/* Trying alternative paths */}
-        <img
-          src="../../public/images/skyline-barcelona-80-cm.jpg"
-          alt="Barcelona Skyline"
-          className="w-full h-[400px] object-cover mt-4"
-        />
-        <img
-          src="../public/images/skyline-barcelona-80-cm.jpg"
-          alt="Barcelona Skyline"
-          className="w-full h-[400px] object-cover mt-4"
-        />
-      </div>
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-16 lg:px-8 xl:mt-28">
@@ -50,25 +31,8 @@ export default async function Home({
                   </Link>
                 </div>
               </div>
-              {/* Image section */}
-              <div className="mt-8 sm:mt-12">
-                <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src="./images/capcelera barcelona.webp"
-                    alt="Castori Laboral Barcelona Office"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
             </div>
           </main>
-        </div>
-      </div>
-      
-      {/* Optional: Background image or pattern */}
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div className="h-56 w-full bg-primary-100 sm:h-72 md:h-96 lg:w-full lg:h-full">
-          {/* You can add a hero image here */}
         </div>
       </div>
     </div>
