@@ -44,14 +44,20 @@
     "title": "Contact us",
     "subtitle": "Free initial consultation",
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "message": "Message",
-      "submit": "Send",
-      "submitting": "Sending...",
-      "successMessage": "Message sent successfully! We'll get back to you soon.",
-      "errorMessage": "Failed to send message. Please try again or contact us directly."
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message"
+      },
+      "actions": {
+        "submit": "Send",
+        "submitting": "Sending..."
+      },
+      "messages": {
+        "success": "Message sent successfully! We'll get back to you soon.",
+        "error": "Failed to send message. Please try again or contact us directly."
+      }
     },
     "info": {
       "title": "Contact information",

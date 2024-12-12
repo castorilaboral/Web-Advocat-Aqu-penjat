@@ -44,14 +44,20 @@
     "title": "Contacta con nosotros",
     "subtitle": "Primera consulta gratuita",
     "form": {
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "phone": "Teléfono",
-      "message": "Mensaje",
-      "submit": "Enviar",
-      "submitting": "Enviando...",
-      "successMessage": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
-      "errorMessage": "Error al enviar el mensaje. Por favor, inténtelo de nuevo o contáctenos directamente."
+      "fields": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "message": "Mensaje"
+      },
+      "actions": {
+        "submit": "Enviar",
+        "submitting": "Enviando..."
+      },
+      "messages": {
+        "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+        "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo o contáctenos directamente."
+      }
     },
     "info": {
       "title": "Información de contacto",

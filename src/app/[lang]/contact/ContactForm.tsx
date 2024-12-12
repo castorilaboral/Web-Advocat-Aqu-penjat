@@ -4,14 +4,20 @@ import { useState } from 'react'
 
 interface ContactFormProps {
   dict: {
-    name: string
-    email: string
-    phone: string
-    message: string
-    submit: string
-    submitting: string
-    successMessage: string
-    errorMessage: string
+    fields: {
+      name: string
+      email: string
+      phone: string
+      message: string
+    }
+    actions: {
+      submit: string
+      submitting: string
+    }
+    messages: {
+      success: string
+      error: string
+    }
   }
 }
 
@@ -51,13 +57,13 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
       setSubmitStatus({
         type: 'success',
-        message: dict.successMessage || 'Message sent successfully!',
+        message: dict.messages.success,
       })
       setFormData({ name: '', email: '', phone: '', message: '' })
     } catch (error) {
       setSubmitStatus({
         type: 'error',
-        message: dict.errorMessage || 'Failed to send message. Please try again.',
+        message: dict.messages.error,
       })
     } finally {
       setIsSubmitting(false)
@@ -78,7 +84,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           htmlFor="name"
           className="block text-sm font-medium text-gray-700"
         >
-          {dict.name}
+          {dict.fields.name}
         </label>
         <div className="mt-1">
           <input
@@ -98,7 +104,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           htmlFor="email"
           className="block text-sm font-medium text-gray-700"
         >
-          {dict.email}
+          {dict.fields.email}
         </label>
         <div className="mt-1">
           <input
@@ -118,7 +124,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           htmlFor="phone"
           className="block text-sm font-medium text-gray-700"
         >
-          {dict.phone}
+          {dict.fields.phone}
         </label>
         <div className="mt-1">
           <input
@@ -137,7 +143,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           htmlFor="message"
           className="block text-sm font-medium text-gray-700"
         >
-          {dict.message}
+          {dict.fields.message}
         </label>
         <div className="mt-1">
           <textarea
@@ -162,7 +168,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
               : 'bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
           }`}
         >
-          {isSubmitting ? dict.submitting || 'Sending...' : dict.submit}
+          {isSubmitting ? dict.actions.submitting : dict.actions.submit}
         </button>
       </div>
 
