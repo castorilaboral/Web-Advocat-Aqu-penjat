@@ -42,6 +42,7 @@ export const blogDictionary = {
           A Castori Laboral, som especialistes en casos d'acomiadament col·lectiu encobert. El nostre equip d'advocats s'assegura de protegir els teus drets i t'acompanya en cada etapa del procés.
         `,
         date: '2024-03-15',
+        slug: 'acomiadaments-collectius-encoberts',
       },
       {
         id: 5,
@@ -97,6 +98,7 @@ export const blogDictionary = {
           A Castori Laboral, som especialistes en dret laboral i tenim una llarga trajectòria en assessorament de treballadors per a la sol·licitud de l'adaptació de jornada. Oferim assessorament tant en cas de necessitar acompanyament en la negociació com si és necessari demandar a l'empresa.
         `,
         date: '2024-06-22',
+        slug: 'conciliacio-adaptacio-jornada',
       },
       {
         id: 6,
@@ -145,6 +147,7 @@ export const blogDictionary = {
           A Castori Laboral, som experts en l'assessorament sobre stock options i la seva inclusió en indemnitzacions laborals. El nostre equip d'advocats t'ajudarà a entendre els teus drets i a protegir els teus interessos en cas de conflicte laboral.
         `,
         date: '2024-09-10',
+        slug: 'tot-sobre-stock-options',
       },
       {
         id: 7,
@@ -176,6 +179,7 @@ export const blogDictionary = {
           Estem preparats per oferir-te un servei complet i adaptat a les teves necessitats, ja sigui que estiguis enfrontant una situació de mobbing, un acomiadament injust o qualsevol altre tipus de conflicte laboral.
         `,
         date: '2024-11-30',
+        slug: 'assetjament-laboral-mobbing',
       },
       {
         id: 8,
@@ -253,6 +257,7 @@ export const blogDictionary = {
           En Castori Laboral, somos especialistas en casos de despido colectivo encubierto. Nuestro equipo de abogados se asegura de proteger tus derechos y acompañarte en cada etapa del proceso.
         `,
         date: '2024-03-15',
+        slug: 'despidos-colectivos-encubiertos',
       },
       {
         id: 5,
@@ -308,6 +313,7 @@ export const blogDictionary = {
           En Castori Laboral, somos especialistas en derecho laboral y tenemos una larga trayectoria en asesoramiento de trabajadores para la solicitud de la adaptación de jornada. Ofrecemos asesoramiento tanto en caso de necesitar acompañamiento en la negociación como si es necesario demandar a la empresa.
         `,
         date: '2024-06-22',
+        slug: 'conciliacion-adaptacion-jornada',
       },
       {
         id: 6,
@@ -356,6 +362,7 @@ export const blogDictionary = {
           En Castori Laboral, somos expertos en el asesoramiento sobre stock options y su inclusión en indemnizaciones laborales. Nuestro equipo de abogados te ayudará a entender tus derechos y a proteger tus intereses en caso de conflicto laboral.
         `,
         date: '2024-09-10',
+        slug: 'todo-sobre-stock-options',
       },
       {
         id: 7,
@@ -387,6 +394,7 @@ export const blogDictionary = {
           Estamos preparados para ofrecerte un servicio completo y adaptado a tus necesidades, ya sea que estés enfrentando una situación de mobbing, un despido injusto o cualquier otro tipo de conflicto laboral.
         `,
         date: '2024-11-30',
+        slug: 'acoso-laboral-mobbing',
       },
       {
         id: 8,
@@ -464,6 +472,7 @@ export const blogDictionary = {
           At Castori Laboral, we are specialists in hidden collective dismissal cases. Our team of lawyers ensures the protection of your rights and accompanies you through every stage of the process.
         `,
         date: '2024-03-15',
+        slug: 'hidden-collective-dismissals',
       },
       {
         id: 5,
@@ -519,6 +528,7 @@ export const blogDictionary = {
           At Castori Laboral, we are specialists in labor law with extensive experience in advising workers on workday adaptation requests. We offer guidance both for negotiation support and when it's necessary to file a claim against the company.
         `,
         date: '2024-06-22',
+        slug: 'workday-adaptation-guide',
       },
       {
         id: 6,
@@ -567,6 +577,7 @@ export const blogDictionary = {
           At Castori Laboral, we are experts in advising on stock options and their inclusion in employment compensations. Our team of lawyers will help you understand your rights and protect your interests in case of employment disputes.
         `,
         date: '2024-09-10',
+        slug: 'everything-about-stock-options',
       },
       {
         id: 7,
@@ -598,6 +609,7 @@ export const blogDictionary = {
           We are prepared to offer you a complete service adapted to your needs, whether you're facing a mobbing situation, unfair dismissal, or any other type of labor conflict.
         `,
         date: '2024-11-30',
+        slug: 'workplace-harassment-mobbing',
       },
       {
         id: 8,
