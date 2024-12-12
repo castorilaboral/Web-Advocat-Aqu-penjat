@@ -7,6 +7,19 @@ const getBlogPost = (lang: string, slug: string) => {
   return dictionary.posts.find(post => post.slug === slug);
 };
 
+const isTitle = (text: string): boolean => {
+  const trimmedText = text.trim();
+  // Es un título si:
+  // 1. Termina en "?" o
+  // 2. No termina en punto y tiene menos de 100 caracteres y no empieza con "-" o
+  // 3. Contiene ":" y tiene menos de 100 caracteres
+  return (
+    trimmedText.endsWith('?') ||
+    (!trimmedText.endsWith('.') && trimmedText.length < 100 && !trimmedText.startsWith('-')) ||
+    (trimmedText.includes(':') && trimmedText.length < 100)
+  );
+};
+
 const formatContent = (content: string) => {
   // Separar el contenido en secciones
   const sections = content.split('\n\n').map((section, sectionIndex) => {
@@ -22,6 +35,16 @@ const formatContent = (content: string) => {
             </li>
           ))}
         </ul>
+      );
+    } else if (isTitle(section)) {
+      // Es un título
+      return (
+        <h2 
+          key={`section-${sectionIndex}`} 
+          className="text-2xl font-bold text-secondary-900 mt-12 mb-6"
+        >
+          {section}
+        </h2>
       );
     } else {
       // Es un párrafo normal
