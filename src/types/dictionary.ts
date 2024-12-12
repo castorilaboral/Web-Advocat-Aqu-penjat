@@ -36,11 +36,20 @@ export interface Dictionary {
     title: string
     subtitle: string
     form: {
-      name: string
-      email: string
-      phone: string
-      message: string
-      submit: string
+      fields: {
+        name: string
+        email: string
+        phone: string
+        message: string
+      }
+      actions: {
+        submit: string
+        submitting: string
+      }
+      messages: {
+        success: string
+        error: string
+      }
     }
     info: {
       title: string
