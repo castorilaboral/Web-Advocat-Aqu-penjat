@@ -1,4 +1,5 @@
 import { getDictionary } from '@/lib/dictionaries'
+import Image from 'next/image'
 
 export default async function Team({
   params: { lang },
@@ -60,6 +61,15 @@ export default async function Team({
                 </div>
               </div>
             </div>
+          </div>
+          <div className="relative h-[600px] rounded-lg overflow-hidden">
+            <Image
+              src="/images/imatge_sobre_nosaltres.jpg"
+              alt="Our Team"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
       </div>
