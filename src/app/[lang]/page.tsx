@@ -1,6 +1,6 @@
 import { getDictionary } from '@/lib/dictionaries'
 import Link from 'next/link'
-import Image from 'next/image'
+import ResponsiveImage from '@/components/ResponsiveImage'
 
 export default async function Home({
   params: { lang },
@@ -12,13 +12,10 @@ export default async function Home({
   return (
     <div className="relative bg-white">
       {/* Skyline Image Section */}
-      <div className="w-full h-[400px] relative">
-        <Image
+      <div className="relative w-full h-[400px]">
+        <ResponsiveImage
           src="/images/skyline-barcelona-80-cm.jpg"
           alt="Barcelona Skyline"
-          layout="fill"
-          objectFit="cover"
-          priority
         />
       </div>
       <div className="max-w-7xl mx-auto">
@@ -45,13 +42,9 @@ export default async function Home({
               {/* Image section */}
               <div className="mt-8 sm:mt-12">
                 <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
-                  <Image
+                  <ResponsiveImage
                     src="/images/capcelera barcelona.webp"
                     alt="Castori Laboral Barcelona Office"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                    priority
                   />
                 </div>
               </div>
