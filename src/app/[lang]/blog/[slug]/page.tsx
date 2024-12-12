@@ -9,14 +9,14 @@ const getBlogPost = (lang: string, slug: string) => {
 
 const formatContent = (content: string) => {
   // Separar el contenido en secciones
-  const sections = content.split('\n\n').map(section => {
+  const sections = content.split('\n\n').map((section, sectionIndex) => {
     if (section.trim().startsWith('-')) {
       // Es una lista
       const items = section.split('\n').filter(item => item.trim());
       return (
-        <ul className="list-none space-y-3 my-8 ml-4">
+        <ul key={`section-${sectionIndex}`} className="list-none space-y-3 my-8 ml-4">
           {items.map((item, idx) => (
-            <li key={idx} className="flex items-start">
+            <li key={`item-${idx}`} className="flex items-start">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-500 mt-2 mr-3 flex-shrink-0"></span>
               <span className="text-secondary-700">{item.replace('-', '').trim()}</span>
             </li>
@@ -26,7 +26,7 @@ const formatContent = (content: string) => {
     } else {
       // Es un párrafo normal
       return (
-        <p className="text-justify leading-relaxed mb-6">
+        <p key={`section-${sectionIndex}`} className="text-justify leading-relaxed mb-6">
           {section}
         </p>
       );
