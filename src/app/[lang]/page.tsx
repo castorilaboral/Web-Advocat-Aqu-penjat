@@ -1,6 +1,5 @@
 import { getDictionary } from '@/lib/dictionaries'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default async function Home({
   params: { lang },
@@ -12,14 +11,22 @@ export default async function Home({
   return (
     <div className="relative bg-white">
       {/* Skyline Image Section */}
-      <div className="w-full h-[400px] relative">
-        <Image
-          src="/images/skyline-barcelona-80-cm.jpg"
+      <div className="w-full">
+        <img
+          src="../../../public/images/skyline-barcelona-80-cm.jpg"
           alt="Barcelona Skyline"
-          fill
-          priority
-          quality={100}
-          style={{ objectFit: 'cover' }}
+          className="w-full h-[400px] object-cover"
+        />
+        {/* Trying alternative paths */}
+        <img
+          src="../../public/images/skyline-barcelona-80-cm.jpg"
+          alt="Barcelona Skyline"
+          className="w-full h-[400px] object-cover mt-4"
+        />
+        <img
+          src="../public/images/skyline-barcelona-80-cm.jpg"
+          alt="Barcelona Skyline"
+          className="w-full h-[400px] object-cover mt-4"
         />
       </div>
       <div className="max-w-7xl mx-auto">
@@ -46,13 +53,10 @@ export default async function Home({
               {/* Image section */}
               <div className="mt-8 sm:mt-12">
                 <div className="relative w-full h-64 sm:h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src="/images/capcelera barcelona.webp"
+                  <img
+                    src="./images/capcelera barcelona.webp"
                     alt="Castori Laboral Barcelona Office"
-                    fill
-                    priority
-                    quality={100}
-                    style={{ objectFit: 'cover' }}
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
