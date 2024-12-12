@@ -1,5 +1,4 @@
 import { getDictionary } from '@/lib/dictionaries'
-import Image from 'next/image'
 
 export default async function Team({
   params: { lang },
@@ -63,12 +62,9 @@ export default async function Team({
             </div>
           </div>
           <div className="relative w-full h-[400px]">
-            <Image
-              src="/images/imatge_sobre_nosaltres.jpg"
+            <img
+              src="public/images/imatge_sobre_nosaltres.jpg"
               alt="Our Team"
-              width={800}
-              height={600}
-              priority
               className="rounded-lg object-cover w-full h-full"
             />
           </div>
