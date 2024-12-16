@@ -63,7 +63,7 @@ export default async function Team({
           </div>
           <div className="relative w-full h-[400px]">
             <img
-              src="public/images/imatge_sobre_nosaltres.jpg"
+              src="/images/imatge_sobre_nosaltres.jpg"
               alt="Our Team"
               className="rounded-lg object-cover w-full h-full"
             />
