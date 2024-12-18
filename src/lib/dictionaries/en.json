@@ -10,7 +10,28 @@
     "title": "Labor Lawyers in Barcelona",
     "subtitle": "Castori Laboral",
     "description": "At Castori Laboral, we have extensive experience in defending workers' rights and are experts in dismissals, workplace harassment, and compensation.",
-    "cta": "Contact for initial consultation"
+    "cta": "Contact for initial consultation",
+    "expertise": {
+      "title": "Areas of expertise",
+      "areas": [
+        {
+          "title": "Dismissal compensation",
+          "description": "Advice and defense in cases of unfair or null dismissal"
+        },
+        {
+          "title": "Workplace harassment (mobbing)",
+          "description": "Legal protection against workplace harassment"
+        },
+        {
+          "title": "Salary claims",
+          "description": "Recovery of unpaid wages and other economic concepts"
+        },
+        {
+          "title": "Workplace accidents",
+          "description": "Defense of your rights in case of work accidents"
+        }
+      ]
+    }
   },
   "about": {
     "title": "About us",

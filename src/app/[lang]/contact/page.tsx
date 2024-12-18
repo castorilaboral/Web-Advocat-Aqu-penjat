@@ -22,9 +22,9 @@ export default async function Contact({
 
         <div className="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-2">
           {/* Contact Form */}
-          <div>
+          {/* <div>
             <ContactForm dict={dict.contact.form} />
-          </div>
+          </div> */}
 
           {/* Contact Information */}
           <div className="bg-gray-50 rounded-lg p-8">
