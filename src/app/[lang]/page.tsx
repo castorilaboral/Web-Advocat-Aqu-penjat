@@ -1,5 +1,20 @@
 import { getDictionary } from '@/lib/dictionaries'
 import Link from 'next/link'
+import ExpertiseAreas from '@/components/ExpertiseAreas'
+import type { ExpertiseArea } from '@/components/ExpertiseAreas'
+
+type ExpertiseDict = {
+  home: {
+    title: string
+    subtitle: string
+    description: string
+    cta: string
+    expertise: {
+      title: string
+      areas: ExpertiseArea[]
+    }
+  }
+}
 
 export default async function Home({
   params: { lang },
@@ -9,31 +24,31 @@ export default async function Home({
   const dict = await getDictionary(lang)
 
   return (
-    <div className="relative bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 lg:mt-16 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-secondary-900 sm:text-5xl md:text-6xl">
-                <span className="block">{dict.home.title}</span>
-                <span className="block text-primary-700 mt-3">{dict.home.subtitle}</span>
-              </h1>
-              <p className="mt-3 text-base text-secondary-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                {dict.home.description}
-              </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <Link
-                    href={`/${lang}/contact`}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-700 hover:bg-primary-800 md:py-4 md:text-lg md:px-10"
-                  >
-                    {dict.home.cta}
-                  </Link>
-                </div>
-              </div>
+    <div className="bg-white">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        {/* Hero section */}
+        <div className="text-center">
+          <h1 className="text-4xl tracking-tight font-extrabold text-secondary-900 sm:text-5xl md:text-6xl">
+            <span className="block">{dict.home.title}</span>
+            <span className="block text-primary-700 mt-3">{dict.home.subtitle}</span>
+          </h1>
+          <p className="mt-3 max-w-md mx-auto text-base text-secondary-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            {dict.home.description}
+          </p>
+          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <div className="rounded-md shadow">
+              <Link
+                href={`/${lang}/contact`}
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-700 hover:bg-primary-800 md:py-4 md:text-lg md:px-10"
+              >
+                {dict.home.cta}
+              </Link>
             </div>
-          </main>
+          </div>
         </div>
+
+        {/* Expertise Areas */}
+        <ExpertiseAreas dict={dict as unknown as ExpertiseDict} />
       </div>
     </div>
   )

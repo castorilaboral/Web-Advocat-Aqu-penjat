@@ -10,7 +10,28 @@
     "title": "Abogados Laboralistas en Barcelona",
     "subtitle": "Castori Laboral",
     "description": "En Castori Laboral, tenemos una amplia experiencia en la defensa de los derechos de los trabajadores y somos expertos en despidos, acoso laboral e indemnizaciones.",
-    "cta": "Contacta para primera consulta"
+    "cta": "Contacta para primera consulta",
+    "expertise": {
+      "title": "Áreas de especialización",
+      "areas": [
+        {
+          "title": "Indemnización por despido",
+          "description": "Asesoramiento y defensa en casos de despido improcedente o nulo"
+        },
+        {
+          "title": "Acoso laboral (mobbing)",
+          "description": "Protección legal contra el acoso en el entorno laboral"
+        },
+        {
+          "title": "Reclamaciones de cantidad",
+          "description": "Recuperación de salarios impagados y otros conceptos económicos"
+        },
+        {
+          "title": "Accidentes laborales",
+          "description": "Defensa de tus derechos en caso de accidente de trabajo"
+        }
+      ]
+    }
   },
   "about": {
     "title": "Sobre nosotros",

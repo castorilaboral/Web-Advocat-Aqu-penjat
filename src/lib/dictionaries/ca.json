@@ -10,7 +10,28 @@
     "title": "Advocats Laboralistes a Barcelona",
     "subtitle": "Castori Laboral",
     "description": "A Castori Laboral, tenim una àmplia experiència en la defensa dels drets dels treballadors i som experts en acomiadaments, assetjament laboral i indemnitzacions.",
-    "cta": "Contacta per primera consulta"
+    "cta": "Contacta per primera consulta",
+    "expertise": {
+      "title": "Àrees d'especialització",
+      "areas": [
+        {
+          "title": "Indemnització per acomiadament",
+          "description": "Assessorament i defensa en casos d'acomiadament improcedent o nul"
+        },
+        {
+          "title": "Assetjament laboral (mobbing)",
+          "description": "Protecció legal contra l'assetjament a l'entorn laboral"
+        },
+        {
+          "title": "Reclamacions de quantitat",
+          "description": "Recuperació de salaris impagats i altres conceptes econòmics"
+        },
+        {
+          "title": "Accidents laborals",
+          "description": "Defensa dels teus drets en cas d'accident de treball"
+        }
+      ]
+    }
   },
   "about": {
     "title": "Sobre nosaltres",

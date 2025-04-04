@@ -62,14 +62,17 @@ export default async function Team({
               </div>
             </div>
           </div>
-          <div className="relative w-full h-[400px]">
-            <Image
-              src="/images/imatge_sobre_nosaltres.jpg"
-              alt="Our Team"
-              layout="fill" // Ensures the image fills the container
-              objectFit="cover" // Ensures the image scales proportionally
-              className="rounded-lg"
-            />
+          <div className="flex items-center justify-center">
+            <div className="relative w-[400px] h-[533px]">
+              <Image
+                src="/images/equip.jpeg"
+                alt="Our Team"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+                className="rounded-lg object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </div>
