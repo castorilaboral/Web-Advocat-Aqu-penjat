@@ -10,6 +10,7 @@ export default async function Footer({ lang }: { lang: string }) {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Castori Laboral</h3>
             <p className="text-secondary-300">{dict.footer.description}</p>
+            <p className="text-secondary-300 mt-2">C/ St Sebastià 10</p>
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">{dict.footer.contact}</h3>
